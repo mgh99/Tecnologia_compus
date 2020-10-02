@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity mux4 is port (
+
+    A, B, C, D: in STD_LOGIC;
+    S: in STD_LOGIC_VECTOR (1 downto 0);
+    X: out STD_LOGIC   
+    );    
+end mux4;
+
+architecture Behavioral of mux4 is
+begin
+
+ process (A, B, C, D, S)
+    begin
+        case S is        
+            when "00" => X <= A;
+            when "01" => X <= B;
+            when "10" => X <= C;
+            when "11" => X <= D;
+            when others => X <= '0'; --el resto de los casos si llega a dar nulo por alguna razon
+        end case;
+end process;
+
+end Behavioral;
