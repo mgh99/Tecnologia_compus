@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity componente is
+
+Port ( X1: in STD_LOGIC;
+    X2: in STD_LOGIC;
+    Y: out STD_LOGIC );
+    
+--  Port ( );
+end componente;
+
+architecture Behavioral of componente is
+
+begin
+
+    process (X1, X2) begin
+        if((X1 = '1') and (X2 = '1')) then
+            Y <= '1';
+        else 
+        Y <= '0';
+        end if;
+        
+        end process;
+
+
+end Behavioral;
