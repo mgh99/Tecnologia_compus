@@ -1,0 +1,31 @@
+# Map Inputs (Switches)
+set_property PACKAGE_PIN J15     [get_ports A[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports A[0]]
+set_property PACKAGE_PIN L16     [get_ports A[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports A[1]]
+
+set_property PACKAGE_PIN M13     [get_ports B[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports B[0]]
+set_property PACKAGE_PIN R15     [get_ports B[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports B[1]]
+
+set_property PACKAGE_PIN R17     [get_ports S[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports S[0]]
+set_property PACKAGE_PIN T18     [get_ports S[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports S[1]]
+
+# Map Output
+set_property PACKAGE_PIN L18     [get_ports D[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[0]]
+set_property PACKAGE_PIN T11     [get_ports D[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[1]]
+set_property PACKAGE_PIN P15     [get_ports D[2]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[2]]
+set_property PACKAGE_PIN K13     [get_ports D[3]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[3]]
+set_property PACKAGE_PIN K16     [get_ports D[4]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[4]]
+set_property PACKAGE_PIN R10     [get_ports D[5]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[5]]
+set_property PACKAGE_PIN T10     [get_ports D[6]]
+set_property IOSTANDARD LVCMOS33 [get_ports D[6]]
