@@ -1,0 +1,9 @@
+1) Ecuaciones de excitación y salida:
+
+Z  = L·R'·Q1·Q0
+D1 = L·R'·Q1'·Q0 + L'·Q1 + R·Q1 + Q1·Q0'
+D0 = L'·R + L'·Q0 + R·Q0
+
+2) No funciona porque la salida de la máquina de estados se pone a 1 durante la transición entre S3-S0, que dura menos de un CLK. Por lo que no se aprecia a simple vista.
+3) Al simular se observa el pequeño pulso de salida que dura unos nanosegundos.
+4) Es necesario registrar el valor de la salida Z. Para ello creamos una señal auxiliar (Z_AUX) de modo que cuando valga '1' hacemos que Z valga '1'. Cuando llega un reset se pone a 0.
